@@ -6,25 +6,24 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 /**
  * Rough draft for making the app for jones to see quotes
  *
  */
-public class App {
-
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public class QuotesDB {
+	private List<Author> list;
 
 	public void quotes() throws SQLException {
-		List<Author> list = new ArrayList<>();
+		list = new ArrayList<>();
 		try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/funtimes", "root", "root");
 				PreparedStatement preparedStatement = conn.prepareStatement("select *from quotes_first");) {
 			ResultSet rs = preparedStatement.executeQuery();
