@@ -16,6 +16,7 @@ public class Main extends Application {
 			Scene scene = new Scene(root, 400, 400);
 			scene.getStylesheets().add(getClass().getResource("MainApp.fxml").toExternalForm());
 			primaryStage.setScene(scene);
+			primaryStage.setTitle("Jones' Inspires");
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -23,15 +24,6 @@ public class Main extends Application {
 	}
 
 	public static void main(String[] args) throws SQLException {
-//		QuoteData qd = new QuoteData();
-//		try {
-//			qd.quotes();
-//		} catch (SQLException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
 		launch(args);
 	}
 }
-/**
-It's not who you are that holds you back, it's who you think you're not.*/

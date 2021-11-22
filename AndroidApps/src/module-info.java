@@ -4,6 +4,7 @@ module AndroidApps {
 	requires java.sql;
 	requires lombok;
 	requires javafx.base;
-	
+	requires json.simple;
+
 	opens application to javafx.graphics, javafx.fxml;
 }
