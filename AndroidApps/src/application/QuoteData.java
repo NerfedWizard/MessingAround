@@ -8,16 +8,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
 /**
  * Rough draft for making the app for jones to see quotes
  *
  */
-@AllArgsConstructor
-@NoArgsConstructor
 public class QuoteData {
 	private List<Author> list;
 
@@ -30,11 +24,6 @@ public class QuoteData {
 				String author = rs.getString(1);
 				String quote = rs.getString(2);
 				list.add(new Author(author, quote));
-			}
-		}
-		for (Author s : list) {
-			if (s.getName().equals("Lao Tzu")) {
-				System.out.println(s.toString());
 			}
 		}
 	}
