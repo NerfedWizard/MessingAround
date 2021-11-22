@@ -1,12 +1,10 @@
 package application;
 
-import java.sql.SQLException;
-
 import javafx.application.Application;
-import javafx.stage.Stage;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
 
 public class Main extends Application {
 	@Override
@@ -22,16 +20,10 @@ public class Main extends Application {
 		}
 	}
 
-	public static void main(String[] args) throws SQLException {
-//		QuoteData qd = new QuoteData();
-//		try {
-//			qd.quotes();
-//		} catch (SQLException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+	public static void main(String[] args) {
 		launch(args);
 	}
 }
 /**
-It's not who you are that holds you back, it's who you think you're not.*/
+ * It's not who you are that holds you back, it's who you think you're not.
+ */
