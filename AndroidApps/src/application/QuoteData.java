@@ -18,7 +18,7 @@ public class QuoteData {
 	public void quotes() throws SQLException {
 		list = new ArrayList<Author>();
 		try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/funtimes", "root", "root");
-				PreparedStatement preparedStatement = conn.prepareStatement("select *from quotes_first");) {
+				PreparedStatement preparedStatement = conn.prepareStatement("select *from quote_first");) {
 			ResultSet rs = preparedStatement.executeQuery();
 			while (rs.next()) {
 				String author = rs.getString(1);
