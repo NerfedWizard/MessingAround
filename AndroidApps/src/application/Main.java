@@ -25,6 +25,3 @@ public class Main extends Application {
 		launch(args);
 	}
 }
-/**
- * It's not who you are that holds you back, it's who you think you're not.
- */
