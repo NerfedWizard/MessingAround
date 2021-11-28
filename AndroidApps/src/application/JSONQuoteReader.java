@@ -34,7 +34,7 @@ public class JSONQuoteReader {
 				String catr = (String) ju.get("Category");
 				set.add(catr);
 				if (!mapped.containsKey(catr)) {
-					mapped.put(catr, new HashMap<String, List<String>>()); 
+					mapped.put(catr, new HashMap<String, List<String>>());
 				}
 				name = (String) ju.get("Author");
 				if (!mapped.get(catr).containsKey(name)) {

@@ -27,12 +27,8 @@ public class Main extends Application {
 		try {
 			JSONQuoteReader.quoteReader();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		} 
 		launch(args);
 	}
 }
-/**
- * It's not who you are that holds you back, it's who you think you're not.
- */

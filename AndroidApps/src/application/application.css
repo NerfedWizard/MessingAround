@@ -2,9 +2,6 @@
 .text-area {
 	-fx-text-fill: #00FF00;
     -fx-text-background-color: #00FF00;
-    /**-fx-highlight-fill: derive(-fx-control-inner-background,-20.0%);
-    -fx-highlight-text-fill: -fx-text-inner-color;*/
-    -fx-prompt-text-fill: derive(-fx-control-inner-background,-60.0%);
     -fx-background-color: #000000;
     -fx-background-insets: 0.0, 1.0;
     -fx-background-radius: 3.0, 2.0;
@@ -14,21 +11,19 @@
     /*the is 1px less top and bottom than TextInput because of scrollpane border */
     -fx-text-fill: #00FF00;
     -fx-text-background-color: #00FF00;
-    /**-fx-highlight-fill: derive(-fx-control-inner-background,-20.0%);
-    -fx-highlight-text-fill: -fx-text-inner-color;*/
-    -fx-prompt-text-fill: blue;
     -fx-background-color: #000000;
     -fx-background-insets: 0.0, 1.0;
     -fx-background-radius: 3.0, 2.0;
     -fx-padding: 0.333333em 0.583em 0.333333em 0.583em; /* 4 7 4 7 */
 }
-/** .text-input:focused {
-    -fx-text-fill: #00FF00;
-    -fx-text-background-color: #00FF00;
-     -fx-highlight-fill: derive(-fx-control-inner-background,-20.0%);
-    -fx-highlight-text-fill: -fx-text-inner-color;
-    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30.0%);
-    -fx-background-color: #000000;
-    -fx-background-insets: 0.0, 1.0;
-    -fx-background-radius: 3.0, 2.0;
-}*/
+.context-menu { 
+	-fx-background-color: #000000;
+	-fx-text-fill: #00FF00;
+	-fx-highlight-fill: #00FF00;
+	-fx-cell-hover-color: #00FF00;
+	-fx-prompt-text-fill: #00FF00
+}
+.root {
+    -fx-accent: #00FF00;
+    -fx-focus-color: #00FF00;
+}

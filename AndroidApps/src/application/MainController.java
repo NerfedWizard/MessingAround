@@ -25,8 +25,8 @@ public class MainController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		choiceBoxList();
 	}
-
 	public void lucky() {
+
 		int end = 0;
 		Random rand = new Random();
 		String choice = chbx.getValue();
@@ -42,6 +42,5 @@ public class MainController implements Initializable {
 	public void choiceBoxList() {
 		ObservableList<String> cursors = FXCollections.observableArrayList(JSONQuoteReader.set);
 		chbx.setItems(cursors);
-//		cursors.add(null);
 	}
 }
